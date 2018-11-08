@@ -8,7 +8,7 @@ To facilitate wider use, the images, texts and technical implementation – i.e.
 
 The calculations behind the Lifestyle Test can also be made available upon a separate request to Sitra. This makes it easier to follow for which purposes the calculations are applied and to provide instructions for use. The questions and calculations of the Lifestyle Test are based on environmental calculations and the most common lifestyles, as a result of which calculations must be examined separately for each country when introducing the Test for international use. The party implementing the Materials is responsible for adapting the questions and calculations of the Materials to the country as it deems fit.
 
-More detailed license information will be found from link below:
+More detailed license information will be found from link below:  
 https://www.sitra.fi/en/articles/sitras-100-smart-ways-lifestyle-test-licences-terms-use/
 
 ## Development server
