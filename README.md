@@ -1,7 +1,9 @@
 # Sitra Elamantapatesti
 
-[Production app](https://elamantapatesti.sitra.fi/)
-[Staging app](https://sitra-elamantapatesti.herokuapp.com/)
+## License
+
+License information will be found from this website: 
+https://www.sitra.fi/en/articles/sitras-100-smart-ways-lifestyle-test-licences-terms-use/
 
 ## Development server
 
