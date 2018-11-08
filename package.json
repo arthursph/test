@@ -1,0 +1,106 @@
+{
+    "name": "sitra-elamantapatesti",
+    "version": "0.0.0",
+    "license": "MIT",
+    "author": {
+        "name": "Ville Harjunen",
+        "email": "ville.harjunen@frantic.com",
+        "url": "https://www.frantic.com/"
+    },
+    "private": true,
+    "engines": {
+        "node": "9.x.x"
+    },
+    "scripts": {
+        "heroku-postbuild": "npm run build",
+        "start": "node dist/server.js --universal",
+        "prebuild": "rm -rf dist && mkdir dist",
+        "build": "npm run build:client && npm run build:server",
+        "prebuild:client": "mkdir dist/public && mkdir dist/server",
+        "build:client": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
+        "build:server": "webpack --config webpack.server.config.js --progress",
+        "dev": "npm run dev:client & npm run dev:server",
+        "dev:client": "ng serve -p 5000 -o -hmr -pc proxy.conf.json -e=hmr",
+        "dev:server": "nodemon --exec ts-node src/server/app.ts --watch src/server/",
+        "sync": "npm run sync:db && npm run sync:navigation",
+        "sync:db": "ts-node src/server/helpers/database-init.ts",
+        "sync:tips": "ts-node src/server/helpers/fetch-and-save-tips-from-wp.ts",
+        "sync:navigation": "ts-node src/server/helpers/fetch-navigation-from-wp.ts",
+        "report": "ts-node src/server/helpers/answer-count-calculator.ts & ts-node src/server/helpers/monthly-report-calculator.ts & ts-node src/server/helpers/result-category-calculator.ts",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "linters": {
+            "*.{ts,json,scss}": [
+                "prettier --write",
+                "git add"
+            ]
+        }
+    },
+    "dependencies": {
+        "@angular/animations": "^5.1.1",
+        "@angular/cli": "^1.6.1",
+        "@angular/common": "^5.1.1",
+        "@angular/compiler": "^5.1.1",
+        "@angular/compiler-cli": "^5.1.1",
+        "@angular/core": "^5.1.1",
+        "@angular/forms": "^5.1.1",
+        "@angular/http": "^5.1.1",
+        "@angular/platform-browser": "^5.1.1",
+        "@angular/platform-browser-dynamic": "^5.1.1",
+        "@angular/platform-server": "^5.1.1",
+        "@angular/router": "^5.1.1",
+        "@angularclass/hmr": "^2.1.3",
+        "@nguniversal/express-engine": "^5.0.0-beta.5",
+        "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
+        "@ngx-cache/core": "^4.0.1",
+        "@ngx-translate/core": "^8.0.0",
+        "@ngx-translate/http-loader": "^2.0.0",
+        "@types/jasmine": "^2.5.54",
+        "@types/node": "^8.0.28",
+        "async": "^2.5.0",
+        "body-parser": "^1.17.2",
+        "chalk": "2.1.0",
+        "codelyzer": "^3.2.0",
+        "cookie-parser": "^1.4.3",
+        "core-js": "^2.4.1",
+        "cors": "^2.8.4",
+        "dotenv": "^4.0.0",
+        "express": "^4.15.4",
+        "express-cluster": "0.0.5",
+        "lint-staged": "^7.1.2",
+        "mongoose": "^4.13.9",
+        "morgan": "^1.8.2",
+        "ng-click-outside": "^2.4.1",
+        "request-promise-native": "^1.0.5",
+        "rxjs": "^5.5.5",
+        "superagent": "^3.6.0",
+        "ts-loader": "^3.2.0",
+        "ts-node": "^4.0.2",
+        "tslint": "^5.7.0",
+        "typescript": "^2.4.2",
+        "web-animations-js": "^2.3.1",
+        "webpack-shell-plugin": "^0.5.0",
+        "zone.js": "^0.8.4"
+    },
+    "devDependencies": {
+        "husky": "^1.0.0-rc.8",
+        "jasmine-core": "~2.5.2",
+        "jasmine-spec-reporter": "~3.2.0",
+        "karma": "~1.4.1",
+        "karma-chrome-launcher": "~2.0.0",
+        "karma-cli": "~1.0.1",
+        "karma-coverage-istanbul-reporter": "^0.2.0",
+        "karma-jasmine": "~1.1.0",
+        "karma-jasmine-html-reporter": "^0.2.2",
+        "prettier": "^1.13.0",
+        "protractor": "~5.1.0"
+    }
+}

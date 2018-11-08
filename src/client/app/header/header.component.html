@@ -1,0 +1,87 @@
+<header class="site-header bp0-med-padding" role="banner">
+    <div class="site-branding container">
+        <div class="pull-left">
+            <div class="site-title">
+                <a href="https://www.sitra.fi/" rel="home"><img class="site-title__logo" src="https://www.sitra.fi/app/themes/sitra/assets/images/logo-sitra.svg" alt="Sitra.fi">
+                </a>
+            </div>
+        </div>
+        <div class="text-align-right site-header__items-container">
+            <div class="site-header__item-right">
+                <div class="language-selector-desktop__container">
+                    <a class="language-selector__select-language-in-mobile bp3-col-hidden" (click)="toggleLanguageSelector()">
+                        <span class="language-selector__select-language-in-mobile-icon icon icon-lang"></span>
+                    </a>
+                    <ul class="language-selector language-selector-desktop inline-block pull-right">
+                        <li>
+                            <a [ngClass]="{'current-language' : translate.currentLang === 'fi'}" (click)="changeLanguage('fi')">fi</a>
+                        </li>
+                        <li>
+                            <span class="language-selector__separator">/</span>
+                        </li>
+                        <li>
+                            <a [ngClass]="{'current-language' : translate.currentLang === 'en'}" (click)="changeLanguage('en')">en</a>
+                        </li>
+                        <li>
+                            <span class="language-selector__separator">/</span>
+                        </li>
+                        <li>
+                            <a [ngClass]="{'current-language' : translate.currentLang === 'se'}" (click)="changeLanguage('se')">se</a>
+                        </li>
+                    </ul>
+                    <img class="language-selector__language-icon bp0-col-hidden bp3-col-show-inline" src="https://www.sitra.fi/app/themes/sitra/assets/images/icon-lang.svg">
+                </div>
+            </div>
+            <div class="site-header__item-right">
+                <button class="toggle-search-bar btn btn-dark-hover btn-icon-on-mobile" (click)="toggleSearch()" [ngClass]="{'active': searchState}">
+                    <i class="btn__icon icon icon-search"></i>
+                    <span class="btn__label">{{ "SEARCH" | translate }}</span>
+                </button>
+            </div>
+            <div class="site-header__item-right">
+                <button class="toggle-main-navigation btn btn-dark-hover btn-icon-on-mobile" (click)="toggleNavigation()" [ngClass]="{'active': navigationState}">
+                    <i class="btn__icon icon icon-menu"></i>
+                    <span class="btn__label">{{ "MENU" | translate }}</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="language-selector-mobile-container" [style.display]="languageSelectorState" [ngClass]="{'active': languageSelectorState}">
+        <ul class="language-selector language-selector-mobile med-v-gutter-top inline-block">
+            <li>
+                <span [ngClass]="{'current-language' : translate.currentLang === 'fi'}" (click)="changeLanguage('fi')">fi</span>
+            </li>
+            <li>
+                <span class="language-selector__separator">/</span>
+            </li>
+            <li>
+                <span [ngClass]="{'current-language' : translate.currentLang === 'en'}" (click)="changeLanguage('en')">en</span>
+            </li>
+            <li>
+                <span class="language-selector__separator">/</span>
+            </li>
+            <li>
+                <span [ngClass]="{'current-language' : translate.currentLang === 'se'}" (click)="changeLanguage('se')">se</span>
+            </li>
+        </ul>
+    </div>
+
+</header>
+
+<div class="nav" [ngClass]="{'active': navigationState}" *ngIf="navigation" [innerHTML]="navigation[translate.currentLang]"></div>
+
+<div class="search-bar-wrapper" [ngClass]="{'active': searchState}">
+    <div class="bp0-med-padding">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-field__container">
+                    <form #searchForm="ngForm" (ngSubmit)="onSubmit()">
+                        <input type="text" name="search_term" placeholder="{{'SEARCH' | translate}}" class="search-field search-field--black" [(ngModel)]="searchField">
+                        <input class="search-button icon icon-search" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

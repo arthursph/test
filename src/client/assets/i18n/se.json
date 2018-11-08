@@ -1,0 +1,73 @@
+{
+    "URL": "https://livsstilstest.sitra.fi/",
+    "HOME_URL": "/",
+    "TEST_URL": "/testet",
+    "RESULT_URL": "/resultat",
+    "WELCOME_TO_SITRA": "",
+    "INTRO_IMAGE": "/assets/images/elamantapatesti-otsikko-se.svg",
+    "SEARCH": "Sök",
+    "SEARCH_URL": "https://www.sitra.fi/sv/arkiv/?search_term=",
+    "MENU": "Meny",
+    "DMAT": "Kalkylering: D-mat oy",
+    "UPDATED": "Kalkylering har uppdaterats på 24.4.2018",
+    "CHANNELS": "Kanaler",
+    "CONTACT_US": "Kontakta oss",
+    "SITRA_NAME": "Jubileumsfonden för Finlands självständighet Sitra",
+    "SITRA_ADDRESS": "Östersjögatan 11-13, PB 160,",
+    "SITRA_ADDRESS_ZIP": "00181 Helsingfors",
+    "PHONE": "Tfn",
+    "SITRA_PHONE": "+358 294 618 991",
+    "FAX": "",
+    "SITRA_FAX": "",
+    "EMAIL": "Personalens e-postadresser har formen:",
+    "SITRA_EMAIL": "fornamn.efternamn@sitra.fi eller sitra@sitra.fi",
+    "SITRA_BUSINESS_ID": "FO-nummer 0202132-3",
+    "ROUTE_GUIDE": "",
+    "TERMS_OF_USE": "Användarvillkor",
+    "INTRO":
+        "Är din livsstil på miljöns sida eller mot den? Som ett resultat på det här snabba testet får du skräddarsydda tips som hjälper dig spara tid och pengar och förbättra din livskvalitet. Och naturen tackar!",
+    "BEGIN": "Starta livsstilstestet",
+    "DONE":
+        "Testet har tagits {{ count }} gånger och det genomsnittliga koldioxidavtrycket är",
+    "BACK": "Tillbaka",
+    "CONTINUE": "FORTSÄTT",
+    "SHOW_RESULTS": "VISA RESULTAT",
+    "RESULT_COMMON":
+        "Vi borde alla halvera vårt koldioxidutsläpp för att begränsa klimatförändringen.",
+    "SHARE": "dela",
+    "SHARE_YOUR_RESULT": "DELA DITT RESULTAT",
+    "START_OVER": "Gör testet på nytt",
+    "YOUR_FOOTPRINT": "Ditt koldioxidavtryck",
+    "AVERAGE_FOOTPRINT":
+        "Det genomsnittliga koldioxidavtrycket för de som tagit testet",
+    "TIPS_HEADING": "Tips för dig",
+    "TIPS_INTRO":
+        "Utifrån ditt resultat vill vi rekommendera att du bekantar dig med tipsen nedan som hjälper dig minska ditt koldioxidavtryck och samtidigt spara pengar!",
+    "TIPS": "tips",
+    "SHOW_ALL": "Visa alla",
+    "ENVIRONMENT_EFFECT": "Gärningens inverkan på miljön",
+    "SHOW_ALL_SMART_WAYS": "Visa alla 100 gärningar",
+    "SMART_WAYS_URL": "https://www.sitra.fi/hankkeet/100-fiksua-arjen-tekoa/",
+    "MY_CARBON_FOOTPRINT":
+        "Mitt koldioxidavtryck är {{co2e}} kg CO2e. Testa du med ifall du är ett hot eller en möjlighet för miljön!\n\nhttps://livsstilstest.sitra.fi/",
+    "SHARE": {
+        "HOME": {
+            "TITLE": "Livsstilstest",
+            "DESCRIPTION":
+                "Är din livsstil på miljöns sida eller mot den? Som ett resultat på det här snabba testet får du skräddarsydda tips som hjälper dig spara tid och pengar och förbättra din livskvalitet. Och naturen tackar!"
+        },
+        "FB": {
+            "TITLE": "Mitt koldioxidavtryck är {{value}} kg CO2e",
+            "DESCRIPTION":
+                "Testa du med ifall du är ett hot eller en möjlighet för miljön!"
+        },
+        "TWITTER": {
+            "DESCRIPTION":
+                "Mitt koldioxidavtryck är {{value}} kg CO2e. Testa du med ifall du är ett hot eller en möjlighet för miljön!"
+        }
+    },
+    "GRAPH_TEXT": "Genomsnittsfinländarens koldioxidavtryck",
+    "GRAPH_URL": "/Sitra-Keskivertosuomalainen-graafit-SV.pdf",
+    "CALCULATIONS_TEXT": "Beräkningsgrunder för livsstilstest",
+    "CALCULATIONS_URL": "/Sitran_elamantapatestin_laskentaperusteet_svenska.pdf"
+}

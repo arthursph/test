@@ -1,0 +1,74 @@
+{
+    "URL": "https://lifestyletest.sitra.fi/",
+    "HOME_URL": "/",
+    "TEST_URL": "/test",
+    "RESULT_URL": "/result",
+    "WELCOME_TO_SITRA":
+        "https://www.sitra.fi/en/articles/welcome-sitra-we-have-moved-new-office-ruoholahti/",
+    "INTRO_IMAGE": "/assets/images/elamantapatesti-otsikko-en.svg",
+    "SEARCH": "Search",
+    "SEARCH_URL": "https://www.sitra.fi/en/archive/?search_term=",
+    "MENU": "Menu",
+    "DMAT": "Calculations: D-mat oy",
+    "UPDATED": "The calculations have been updated April 24, 2018",
+    "CHANNELS": "Channels",
+    "CONTACT_US": "Contact us",
+    "SITRA_NAME": "The Finnish Innovation Fund Sitra",
+    "SITRA_ADDRESS": "Itämerenkatu 11-13, PO Box 160,",
+    "SITRA_ADDRESS_ZIP": "00181 Helsinki",
+    "PHONE": "Telephone",
+    "SITRA_PHONE": "+358 294 618 991",
+    "FAX": "Telefax",
+    "SITRA_FAX": "+358 9 645 072",
+    "EMAIL": "Email",
+    "SITRA_EMAIL": "firstname.lastname@sitra.fi, sitra@sitra.fi",
+    "SITRA_BUSINESS_ID": "Business ID 0202132-3",
+    "ROUTE_GUIDE": "",
+    "TERMS_OF_USE": "Terms of use",
+    "INTRO":
+        "Is your lifestyle good or bad for the environment? After this short test, you will get tips tailored for you. They will help you save time and money and improve your quality of life. And our planet will thank you!",
+    "BEGIN": "Start the test",
+    "DONE":
+        "The test has been done {{ count }} times and the average carbon footprint is",
+    "BACK": "Back",
+    "CONTINUE": "CONTINUE",
+    "SHOW_RESULTS": "SHOW THE RESULTS",
+    "RESULT_COMMON":
+        "We should all halve our carbon footprint to curb climate change.",
+    "SHARE": "share",
+    "SHARE_YOUR_RESULT": "SHARE YOUR RESULTS",
+    "START_OVER": "Do the test again",
+    "YOUR_FOOTPRINT": "Your carbon footprint",
+    "AVERAGE_FOOTPRINT": "Average carbon footprint of people who took the test",
+    "TIPS_HEADING": "Tips for you",
+    "TIPS_INTRO":
+        "Based on your results, we recommend that you familiarise yourself with the tips below. They may help you reduce your carbon footprint and save money, too!",
+    "TIPS": "tips",
+    "SHOW_ALL": "Show all",
+    "ENVIRONMENT_EFFECT": "Environmental impact",
+    "SHOW_ALL_SMART_WAYS": "Show all 100 smart ways",
+    "SMART_WAYS_URL":
+        "https://www.sitra.fi/en/projects/100-smart-ways-to-live-sustainably/",
+    "MY_CARBON_FOOTPRINT":
+        "My carbon footprint is {{co2e}} kg CO2e. Why don’t you do the test, too, and find out whether you are a threat or an opportunity for nature!\n\nhttps://lifestyletest.sitra.fi/",
+    "SHARE": {
+        "HOME": {
+            "TITLE": "Lifestyle test",
+            "DESCRIPTION":
+                "Is your lifestyle good or bad for the environment? After this short test, you will get tips tailored for you. They will help you save time and money and improve your quality of life. And our planet will thank you!"
+        },
+        "FB": {
+            "TITLE": "My carbon footprint is {{value}} kg CO2e",
+            "DESCRIPTION":
+                "Why don’t you do the test, too, and find out whether you are a threat or an opportunity for the environment!"
+        },
+        "TWITTER": {
+            "DESCRIPTION":
+                "My carbon footprint is {{value}} kg CO2e. Why don’t you do the test, too, and find out whether you are a threat or an opportunity for nature!"
+        }
+    },
+    "GRAPH_TEXT": "Carbon footprint of an average Finn",
+    "GRAPH_URL": "/Sitra-Keskivertosuomalainen-graafit-EN.pdf",
+    "CALCULATIONS_TEXT": "Calculation basis used in the lifestyle test",
+    "CALCULATIONS_URL": "/Sitran_elamantapatestin_laskentaperusteet_english.pdf"
+}
