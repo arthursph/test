@@ -1,6 +1,6 @@
 import {
     BrowserModule,
-    BrowserTransferStateModule
+    BrowserTransferStateModule,
 } from '@angular/platform-browser'
 import { NgModule, Inject, PLATFORM_ID } from '@angular/core'
 import { FormsModule } from '@angular/forms'
@@ -29,8 +29,6 @@ import { TestService } from './services/test.service'
 import { NavigationService } from './services/navigation.service'
 import { ChartComponent } from './chart/chart.component'
 import { TipComponent } from './tip/tip.component'
-import { HeaderComponent } from './header/header.component'
-import { FooterComponent } from './footer/footer.component'
 
 import { ClickOutsideModule } from 'ng-click-outside'
 
@@ -65,12 +63,10 @@ export function translateFactory(
         FilterPipe,
         TipComponent,
         SortPipe,
-        HeaderComponent,
-        FooterComponent,
         SortByIndexPipe,
         SortByCategoryPipe,
         LegacyShareComponent,
-        ThousandSeparatorPipe
+        ThousandSeparatorPipe,
     ],
     imports: [
         BrowserModule.withServerTransition({ appId: 'sitra-elamantapatesti' }),
@@ -85,9 +81,9 @@ export function translateFactory(
             loader: {
                 provide: TranslateLoader,
                 useFactory: translateFactory,
-                deps: [PLATFORM_ID, Http, HttpClient]
-            }
-        })
+                deps: [PLATFORM_ID, Http, HttpClient],
+            },
+        }),
     ],
     exports: [
         AppComponent,
@@ -95,10 +91,10 @@ export function translateFactory(
         ResultComponent,
         QuestionComponent,
         CategoryComponent,
-        TestComponent
+        TestComponent,
     ],
     providers: [CategoryService, ResultService, TestService, NavigationService],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 export class AppModule {
     constructor(@Inject(PLATFORM_ID) private readonly platformId: any) {}

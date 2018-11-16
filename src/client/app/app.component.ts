@@ -8,11 +8,9 @@ import { TranslateService, LangChangeEvent } from '@ngx-translate/core'
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    public inIframe = false
-
     constructor(
         @Inject(PLATFORM_ID) private platformId: Object,
         private location: Location,
@@ -79,15 +77,7 @@ export class AppComponent implements OnInit {
         })
     }
 
-    ngOnInit() {
-        if (isPlatformBrowser(this.platformId)) {
-            if (window.self !== window.top) {
-                this.inIframe = true
-            } else {
-                this.inIframe = false
-            }
-        }
-    }
+    ngOnInit() {}
 
     setTitle() {
         this.translate.get('SHARE.HOME.TITLE').subscribe(translation => {
