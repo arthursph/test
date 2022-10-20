@@ -76,7 +76,7 @@
         "express": "^4.15.4",
         "express-cluster": "0.0.5",
         "lint-staged": "^7.1.2",
-        "mongoose": "^4.13.9",
+        "mongoose": "^4.13.21",
         "morgan": "^1.8.2",
         "ng-click-outside": "^2.4.1",
         "request-promise-native": "^1.0.5",
