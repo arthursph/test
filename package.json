@@ -73,7 +73,7 @@
         "core-js": "^2.4.1",
         "cors": "^2.8.4",
         "dotenv": "^4.0.0",
-        "express": "^4.15.4",
+        "express": "^4.17.3",
         "express-cluster": "0.0.5",
         "lint-staged": "^7.1.2",
         "mongoose": "^4.13.9",
